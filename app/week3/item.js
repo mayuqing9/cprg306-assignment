@@ -2,14 +2,11 @@
 
 export default function Item({name, quantity, category}){
     return (
-        <div>
-            <h3>{name}</h3>
-            <p>
-                {quantity}
-            </p>
-            <p>
-                {category}
-            </p>
+        <div className="bg-blue-500 text-white"> 
+        <li>
+            {name},
+        </li>
+        <li> buy {quantity}, in {category}</li>
         </div>
     );
 }
