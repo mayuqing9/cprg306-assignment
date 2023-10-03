@@ -1,12 +1,10 @@
 
-
 export default function Item({name, quantity, category}){
     return (
-        <div className="bg-blue-500 text-white"> 
-        <li>
-            {name},
-        </li>
-        <li> buy {quantity}, in {category}</li>
-        </div>
+        <section className="border bg-blue-500 bg-white-800 w- max-w-xs m-4 p-5 rounded shadow-lg">
+            <h3 className="text-white text-xl fomt-bold">Name:{name}</h3>
+            <p>Quantity:{quantity}</p>
+            <p>Category:{category}</p>
+        </section>
     );
 }
